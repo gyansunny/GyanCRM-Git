@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [GyanCRM-Git Test Suite]">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="GyanCRM-Git Test Cases(failed)">
+    <classes>
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <methods>
+          <include name="VerifyContactsLinkClick"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="VerifyHomepageTitleTest"/>
+          <include name="VerifyUserNameAtTop"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- GyanCRM-Git Test Cases(failed) -->
+</suite> <!-- Failed suite [GyanCRM-Git Test Suite] -->
