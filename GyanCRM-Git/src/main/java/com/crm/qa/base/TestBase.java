@@ -27,6 +27,7 @@ public class TestBase {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream("C:\\Users\\gyanprakash2\\git\\GyanCRM-Git\\GyanCRM-Git\\src\\main\\java\\com"
 					+ "\\crm\\qa\\config\\config.properties");
+			//Adding File Path
 			prop.load(ip);
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
