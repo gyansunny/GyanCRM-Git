@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Set;
@@ -77,9 +78,7 @@ public class PDFListener implements ITestListener {
     public ITestResult getResults(ITestResult result){
         return result;
     }
-
-
-
+    
     /**
      * @see org.testng.ITestListener#onTestSuccess(com.beust.testng.ITestResult)
      */
@@ -91,17 +90,17 @@ public class PDFListener implements ITestListener {
 
         }
 
-        Paragraph p = new Paragraph("PASSED TESTS  -" + result.getMethod().getMethodName(), new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
+        Paragraph p = new Paragraph("PASSED TEST", new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
         p.setAlignment(Element.ALIGN_CENTER);
         PdfPCell cell = new PdfPCell(p);
         cell.setColspan(4);
         cell.setBackgroundColor(Color.GREEN);
         this.successTable.addCell(cell);
 
-        cell = new PdfPCell(new Paragraph("Class"));
+        cell = new PdfPCell(new Paragraph("Package"));
         cell.setBackgroundColor(Color.LIGHT_GRAY);
         this.successTable.addCell(cell);
-        cell = new PdfPCell(new Paragraph("Method"));
+        cell = new PdfPCell(new Paragraph("Test Case"));
         cell.setBackgroundColor(Color.LIGHT_GRAY);
         this.successTable.addCell(cell);
         cell = new PdfPCell(new Paragraph("Time (ms)"));
@@ -123,20 +122,21 @@ public class PDFListener implements ITestListener {
         this.successTable.addCell(cell);
         cell = new PdfPCell(new Paragraph("PASSED"));
         this.successTable.addCell(cell);
+        
         //Change messages to steps for use in GUI based WebDriver tests. 
         // The messages are sent via the org.Testng.Report.log method
-        p = new Paragraph("Above tests have passed", new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
+        p = new Paragraph("Above test has passed", new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
         p.setAlignment(Element.ALIGN_CENTER);
         cell = new PdfPCell(p);
         cell.setColspan(4);
         cell.setBackgroundColor(Color.LIGHT_GRAY);
         this.successTable.addCell(cell);
-        //p = new Paragraph("" + Reporter.getOutput());
+        p = new Paragraph("" + Reporter.getOutput());
         p.setAlignment(Element.ALIGN_LEFT);
         List unorderedList = new List(List.UNORDERED);
         for(String item:Reporter.getOutput(result)){
-            unorderedList.add(item);
-        }
+           unorderedList.add(item);
+        } 
         cell = new PdfPCell(p);
         cell.setColspan(4);
         cell.addElement(unorderedList);
@@ -155,17 +155,17 @@ public class PDFListener implements ITestListener {
 
         }
 
-        Paragraph p = new Paragraph("FAILED TEST -" + result.getMethod().getMethodName(), new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
+        Paragraph p = new Paragraph("FAILED TEST", new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
         p.setAlignment(Element.ALIGN_CENTER);
         PdfPCell cell = new PdfPCell(p);
         cell.setColspan(4);
         cell.setBackgroundColor(Color.RED);
         this.failTable.addCell(cell);
 
-        cell = new PdfPCell(new Paragraph("Class"));
+        cell = new PdfPCell(new Paragraph("Package"));
         cell.setBackgroundColor(Color.LIGHT_GRAY);
         this.failTable.addCell(cell);
-        cell = new PdfPCell(new Paragraph("Method"));
+        cell = new PdfPCell(new Paragraph("Test Case"));
         cell.setBackgroundColor(Color.LIGHT_GRAY);
         this.failTable.addCell(cell);
         cell = new PdfPCell(new Paragraph("Time (ms)"));
@@ -175,9 +175,9 @@ public class PDFListener implements ITestListener {
         cell.setBackgroundColor(Color.LIGHT_GRAY);
         this.failTable.addCell(cell);
 
-        cell = new PdfPCell(new Paragraph(result.getTestClass().getName()));
+        cell = new PdfPCell(new Paragraph(result.getTestClass().getName())); //toString()
         this.failTable.addCell(cell);
-        cell = new PdfPCell(new Paragraph(result.getMethod().getMethodName()));
+        cell = new PdfPCell(new Paragraph(result.getMethod().getMethodName())); //cell = new PdfPCell(new Paragraph(result.getMethod().toString()));
         this.failTable.addCell(cell);
 
         long duration = result.getEndMillis()-result.getStartMillis();
@@ -187,45 +187,45 @@ public class PDFListener implements ITestListener {
         this.failTable.addCell(cell);
         cell = new PdfPCell(new Paragraph("FAILED"));
         this.failTable.addCell(cell);   
-        p = new Paragraph("Exception", new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
-        p.setAlignment(Element.ALIGN_CENTER);
-        cell = new PdfPCell(p);
-        cell.setColspan(4);
-        cell.setBackgroundColor(Color.LIGHT_GRAY);
-        this.failTable.addCell(cell);
+        //p = new Paragraph("Exception", new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
+        //p.setAlignment(Element.ALIGN_CENTER);
+        //cell = new PdfPCell(p);
+        //cell.setColspan(4);
+        //cell.setBackgroundColor(Color.LIGHT_GRAY);
+        //this.failTable.addCell(cell);
 
-        Throwable throwable = result.getThrowable();
-        if (throwable != null) {
-            this.throwableMap.put(new Integer(throwable.hashCode()), throwable);
-            this.nbExceptions++;
-            Paragraph excep = new Paragraph(
-                    new Chunk(throwable.toString(), 
-                            new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.UNDERLINE)).
-                            setLocalGoto("" + throwable.hashCode()));
+        //Throwable throwable = result.getThrowable();
+        //if (throwable != null) {
+            //this.throwableMap.put(new Integer(throwable.hashCode()), throwable);
+            //this.nbExceptions++;
+            //Paragraph excep = new Paragraph(
+                    //new Chunk(throwable.toString(), 
+                            //new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.UNDERLINE)).
+                            //setLocalGoto("" + throwable.hashCode()));
 
-            p.setAlignment(Element.ALIGN_LEFT);
-            cell = new PdfPCell(excep);
-            cell.setColspan(4);
-            this.failTable.addCell(cell);
-        }
+            //p.setAlignment(Element.ALIGN_LEFT);
+            //cell = new PdfPCell(excep);
+            //cell.setColspan(4);
+            //this.failTable.addCell(cell);
+       }
 
-        p = new Paragraph("TEST STEPS", new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
-        p.setAlignment(Element.ALIGN_CENTER);
-        cell = new PdfPCell(p);
-        cell.setColspan(4);
-        cell.setBackgroundColor(Color.LIGHT_GRAY);
-        this.failTable.addCell(cell);
-        p = new Paragraph("" + Reporter.getOutput());
-        p.setAlignment(Element.ALIGN_LEFT);
-        List unorderedList = new List(List.UNORDERED);
-        for(String item:Reporter.getOutput(result)){
-            unorderedList.add(item);
-        }
-        cell = new PdfPCell(p);
-        cell.setColspan(4);
-        cell.addElement(unorderedList);
-        this.failTable.addCell(cell);
-    }
+        //p = new Paragraph("TEST STEPS", new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
+       // p.setAlignment(Element.ALIGN_CENTER);
+        //cell = new PdfPCell(p);
+        //cell.setColspan(4);
+        //cell.setBackgroundColor(Color.LIGHT_GRAY);
+        //this.failTable.addCell(cell);
+        //p = new Paragraph("" + Reporter.getOutput());
+        //p.setAlignment(Element.ALIGN_LEFT);
+        //List unorderedList = new List(List.UNORDERED);
+        //for(String item:Reporter.getOutput(result)){
+            //unorderedList.add(item);
+       // }
+        //cell = new PdfPCell(p);
+        //cell.setColspan(4);
+        //cell.addElement(unorderedList);
+        //this.failTable.addCell(cell);
+   // }
 
     /**
      * @see com.beust.testng.ITestListener#onTestSkipped(com.beust.testng.ITestResult)
@@ -237,16 +237,14 @@ public class PDFListener implements ITestListener {
             this.skipTable.setTotalWidth(20f);
         }
 
-//        Paragraph p = new Paragraph("SKIPPED TESTS  -" + result.getMethod().getDescription(), new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
-        Paragraph p = new Paragraph("SKIPPED TESTS  -" + result.getMethod().getMethodName(), new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
+        Paragraph p = new Paragraph("SKIPPED TESTS", new Font(Font.TIMES_ROMAN, Font.DEFAULTSIZE, Font.BOLD));
         p.setAlignment(Element.ALIGN_CENTER);
         PdfPCell cell = new PdfPCell(p);
         cell.setColspan(4);
         cell.setBackgroundColor(Color.YELLOW);
         this.skipTable.addCell(cell);
 
-        cell = new PdfPCell(new Paragraph(result.getTestClass().getName()));
-//        cell = new PdfPCell(new Paragraph(result.getTestClass().getName() + "." + result.getMethod()));
+        cell = new PdfPCell(new Paragraph(result.getTestClass().getName() + "." + result.getMethod().getMethodName()));
         cell.setColspan(4);
         this.skipTable.addCell(cell);
     }
@@ -327,7 +325,7 @@ public class PDFListener implements ITestListener {
         cell = new PdfPCell(new Paragraph("Pass Percent"));
         cell.setBackgroundColor(Color.LIGHT_GRAY);
         this.statTable.addCell(cell);
-        cell = new PdfPCell(new Paragraph("Total Time"));
+        cell = new PdfPCell(new Paragraph("Total Time (in ms)"));
         cell.setBackgroundColor(Color.LIGHT_GRAY);
         this.statTable.addCell(cell);
 
@@ -336,7 +334,9 @@ public class PDFListener implements ITestListener {
         int failed = context.getFailedTests().size();
         double total = passed + skipped + failed;
         double percent = ((int)passed/total) * 100;
-
+        DecimalFormat df = new DecimalFormat("#.##");      
+        percent = Double.valueOf(df.format(percent));
+        
         cell = new PdfPCell(new Paragraph("" + passed));
         this.statTable.addCell(cell);
         cell = new PdfPCell(new Paragraph("" + skipped));
@@ -419,8 +419,7 @@ public class PDFListener implements ITestListener {
             e.printStackTrace();
         }
 
-        //Commenting out the exceptions summary
-      /*  p = new Paragraph("EXCEPTIONS SUMMARY",
+        /*p = new Paragraph("EXCEPTIONS SUMMARY",
                 FontFactory.getFont(FontFactory.HELVETICA, 16, Font.BOLD, new Color(255, 0, 0)));
         try {
             this.document.add(p);
@@ -455,7 +454,7 @@ public class PDFListener implements ITestListener {
                     e2.printStackTrace();
                 }
             }
-        } */
+        }*/
 
         this.document.close();
     }

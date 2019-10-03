@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="GyanCRM-Git Test Suite" duration-ms="105884" started-at="2019-10-03T06:24:16Z" finished-at="2019-10-03T06:26:02Z">
+  <suite name="GyanCRM-Git Test Suite" duration-ms="95821" started-at="2019-10-03T09:24:50Z" finished-at="2019-10-03T09:26:26Z">
     <groups>
     </groups>
-    <test name="GyanCRM-Git Test Cases" duration-ms="105884" started-at="2019-10-03T06:24:16Z" finished-at="2019-10-03T06:26:02Z">
+    <test name="GyanCRM-Git Test Cases" duration-ms="95821" started-at="2019-10-03T09:24:50Z" finished-at="2019-10-03T09:26:26Z">
       <class name="com.crm.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@5025a98f]" name="setUp" is-config="true" duration-ms="15960" started-at="2019-10-03T11:54:16Z" finished-at="2019-10-03T11:54:32Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="setUp" is-config="true" duration-ms="12780" started-at="2019-10-03T14:54:50Z" finished-at="2019-10-03T14:55:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyHomepageTitleTest()[pri:1, instance:com.crm.qa.testcases.HomePageTest@5025a98f]" name="VerifyHomepageTitleTest" duration-ms="64" started-at="2019-10-03T11:54:32Z" finished-at="2019-10-03T11:54:32Z">
+        <test-method status="PASS" signature="VerifyHomepageTitleTest()[pri:1, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="VerifyHomepageTitleTest" duration-ms="22" started-at="2019-10-03T14:55:03Z" finished-at="2019-10-03T14:55:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyHomepageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@5025a98f]" name="tearDown" is-config="true" duration-ms="1482" started-at="2019-10-03T11:54:33Z" finished-at="2019-10-03T11:54:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="tearDown" is-config="true" duration-ms="827" started-at="2019-10-03T14:55:03Z" finished-at="2019-10-03T14:55:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@5025a98f]" name="setUp" is-config="true" duration-ms="15259" started-at="2019-10-03T11:54:34Z" finished-at="2019-10-03T11:54:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="setUp" is-config="true" duration-ms="11632" started-at="2019-10-03T14:55:04Z" finished-at="2019-10-03T14:55:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="VerifyUserNameAtTop()[pri:2, instance:com.crm.qa.testcases.HomePageTest@5025a98f]" name="VerifyUserNameAtTop" duration-ms="52366" started-at="2019-10-03T11:54:49Z" finished-at="2019-10-03T11:55:42Z">
+        <test-method status="FAIL" signature="VerifyUserNameAtTop()[pri:2, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="VerifyUserNameAtTop" duration-ms="51991" started-at="2019-10-03T14:55:16Z" finished-at="2019-10-03T14:56:07Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='top-header-menu']/div[2]/span[1]"}
@@ -32,8 +32,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'IN-GYANPRAKASH2', ip: '100.89.179.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\GYANPR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e139f95b7e83ab92250b76c9ee7a85c9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\GYANPR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b86ed2b865a831e5aed5e32b482eab1b
 *** Element info: {Using=xpath, value=//*[@id='top-header-menu']/div[2]/span[1]}]]>
             </message>
             <full-stacktrace>
@@ -43,8 +43,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'IN-GYANPRAKASH2', ip: '100.89.179.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\GYANPR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60350}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e139f95b7e83ab92250b76c9ee7a85c9
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\GYANPR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b86ed2b865a831e5aed5e32b482eab1b
 *** Element info: {Using=xpath, value=//*[@id='top-header-menu']/div[2]/span[1]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -103,19 +103,19 @@ Session ID: e139f95b7e83ab92250b76c9ee7a85c9
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyUserNameAtTop -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@5025a98f]" name="tearDown" is-config="true" duration-ms="1158" started-at="2019-10-03T11:55:42Z" finished-at="2019-10-03T11:55:43Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="tearDown" is-config="true" duration-ms="2759" started-at="2019-10-03T14:56:08Z" finished-at="2019-10-03T14:56:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@5025a98f]" name="setUp" is-config="true" duration-ms="13466" started-at="2019-10-03T11:55:43Z" finished-at="2019-10-03T11:55:56Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="setUp" is-config="true" duration-ms="12175" started-at="2019-10-03T14:56:10Z" finished-at="2019-10-03T14:56:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyContactsLinkClick()[pri:3, instance:com.crm.qa.testcases.HomePageTest@5025a98f]" name="VerifyContactsLinkClick" duration-ms="2217" started-at="2019-10-03T11:55:56Z" finished-at="2019-10-03T11:55:59Z">
+        <test-method status="PASS" signature="VerifyContactsLinkClick()[pri:3, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="VerifyContactsLinkClick" duration-ms="1804" started-at="2019-10-03T14:56:22Z" finished-at="2019-10-03T14:56:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyContactsLinkClick -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@5025a98f]" name="tearDown" is-config="true" duration-ms="3336" started-at="2019-10-03T11:55:59Z" finished-at="2019-10-03T11:56:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="tearDown" is-config="true" duration-ms="1439" started-at="2019-10-03T14:56:24Z" finished-at="2019-10-03T14:56:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
