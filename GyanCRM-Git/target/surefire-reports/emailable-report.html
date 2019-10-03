@@ -9,34 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">GyanCRM-Git Test Suite</th></tr>
-<tr><td><a href="#t0">GyanCRM-Git Test Cases</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">0</td><td class="num">84</td><td></td><td></td></tr>
+<tr><td><a href="#t0">GyanCRM-Git Test Cases</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">97,426</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">GyanCRM-Git Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">GyanCRM-Git Test Cases &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.crm.qa.testcases.HomePageTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1569931003242</td><td rowspan="1">11</td></tr><tr><th colspan="4">GyanCRM-Git Test Cases &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="5">com.crm.qa.testcases.HomePageTest</td><td><a href="#m1">setUp</a></td><td rowspan="2">1569931003272</td><td rowspan="2">-1569931003272</td></tr><tr class="skippedeven"><td><a href="#m2">setUp</a></td></tr><tr class="skippedeven"><td><a href="#m3">tearDown</a></td><td rowspan="3">1569931003274</td><td rowspan="3">-1569931003274</td></tr><tr class="skippedeven"><td><a href="#m4">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m5">tearDown</a></td></tr><tr><th colspan="4">GyanCRM-Git Test Cases &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">com.crm.qa.testcases.HomePageTest</td><td><a href="#m6">VerifyContactsLinkClick</a></td><td rowspan="1">1569931003273</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">VerifyHomepageTitleTest</a></td><td rowspan="1">1569931003267</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m8">VerifyUserNameAtTop</a></td><td rowspan="1">1569931003272</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">GyanCRM-Git Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">GyanCRM-Git Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.crm.qa.testcases.HomePageTest</td><td><a href="#m0">VerifyUserNameAtTop</a></td><td rowspan="1">1569931760797</td><td rowspan="1">52756</td></tr><tr><th colspan="4">GyanCRM-Git Test Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.crm.qa.testcases.HomePageTest</td><td><a href="#m1">VerifyContactsLinkClick</a></td><td rowspan="1">1569931827348</td><td rowspan="1">2524</td></tr><tr class="passedeven"><td><a href="#m2">VerifyHomepageTitleTest</a></td><td rowspan="1">1569931748061</td><td rowspan="1">12</td></tr></tbody>
 </table>
-<h2>GyanCRM-Git Test Cases</h2><h3 id="m0">com.crm.qa.testcases.HomePageTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.crm.qa.base.TestBase.initialization(TestBase.java:40)
-	at com.crm.qa.testcases.HomePageTest.setUp(HomePageTest.java:28)
+<h2>GyanCRM-Git Test Cases</h2><h3 id="m0">com.crm.qa.testcases.HomePageTest#VerifyUserNameAtTop</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;top-header-menu&apos;]/div[2]/span[1]&quot;}
+  (Session info: chrome=77.0.3865.90)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;IN-GYANPRAKASH2&apos;, ip: &apos;192.168.19.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\GYANPR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f3af39b6a80af87ffa1caaa8b7704e87
+*** Element info: {Using=xpath, value=//*[@id=&apos;top-header-menu&apos;]/div[2]/span[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy5.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at com.crm.qa.pages.HomePage.User_text_at_top(HomePage.java:32)
+	at com.crm.qa.testcases.HomePageTest.VerifyUserNameAtTop(HomePageTest.java:45)
 	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.crm.qa.testcases.HomePageTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.crm.qa.testcases.HomePageTest#setUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.crm.qa.testcases.HomePageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.crm.qa.testcases.HomePageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.crm.qa.testcases.HomePageTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.crm.qa.testcases.HomePageTest#VerifyContactsLinkClick</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.crm.qa.base.TestBase.initialization(TestBase.java:40)
-	at com.crm.qa.testcases.HomePageTest.setUp(HomePageTest.java:28)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.crm.qa.testcases.HomePageTest#VerifyHomepageTitleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.crm.qa.base.TestBase.initialization(TestBase.java:40)
-	at com.crm.qa.testcases.HomePageTest.setUp(HomePageTest.java:28)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.crm.qa.testcases.HomePageTest#VerifyUserNameAtTop</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at com.crm.qa.base.TestBase.initialization(TestBase.java:40)
-	at com.crm.qa.testcases.HomePageTest.setUp(HomePageTest.java:28)
-	at java.util.ArrayList.forEach(ArrayList.java:1249)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 38 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.crm.qa.testcases.HomePageTest#VerifyContactsLinkClick</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.crm.qa.testcases.HomePageTest#VerifyHomepageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

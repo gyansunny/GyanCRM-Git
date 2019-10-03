@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [GyanCRM-Git Test Suite]">
   <listeners>
     <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
+    <listener class-name="com.crm.qa.utils.PDFListener"/>
   </listeners>
   <test name="GyanCRM-Git Test Cases(failed)">
     <classes>

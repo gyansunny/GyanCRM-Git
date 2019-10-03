@@ -8,10 +8,8 @@
     <classes>
       <class name="com.crm.qa.testcases.HomePageTest">
         <methods>
-          <include name="VerifyContactsLinkClick"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="VerifyHomepageTitleTest"/>
           <include name="VerifyUserNameAtTop"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.HomePageTest -->
