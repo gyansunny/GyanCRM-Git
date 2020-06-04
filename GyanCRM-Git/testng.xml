@@ -3,14 +3,14 @@
 <suite name="GyanCRM-Git Test Suite">
 
 <listeners>
-	<listener class-name="com.qa.ExtentReportListener.NewExtentReporterNG2"></listener>
+	<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"></listener>
 	<listener class-name="com.crm.qa.utils.PDFListener"></listener>
 </listeners>
 
   <test name="GyanCRM-Git Test Cases">
      
      <classes>
-     <class name="com.crm.qa.testcases.HomePageTest"/> 
+     <class name="com.crm.qa.testcases.LoginPageTest"/> 
      </classes>
          
   </test>

@@ -7,13 +7,13 @@
   </listeners>
   <test name="GyanCRM-Git Test Cases(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.HomePageTest">
+      <class name="com.crm.qa.testcases.LoginPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="TitleTest"/>
           <include name="tearDown"/>
-          <include name="VerifyUserNameAtTop"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- GyanCRM-Git Test Cases(failed) -->
 </suite> <!-- Failed suite [GyanCRM-Git Test Suite] -->

@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-GyanCRM-Git_Test_Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-GyanCRM-Git_Test_Suite" title="com.crm.qa.testcases.HomePageTest" hash-for-method="VerifyUserNameAtTop">VerifyUserNameAtTop</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-GyanCRM-Git_Test_Suite" title="com.crm.qa.testcases.LoginPageTest" hash-for-method="TitleTest">TitleTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-GyanCRM-Git_Test_Suite -->
@@ -116,12 +116,12 @@
                     <div class="method-list-content passed suite-GyanCRM-Git_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-GyanCRM-Git_Test_Suite" title="com.crm.qa.testcases.HomePageTest" hash-for-method="VerifyContactsLinkClick">VerifyContactsLinkClick</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-GyanCRM-Git_Test_Suite" title="com.crm.qa.testcases.LoginPageTest" hash-for-method="EmailFieldPresentTest">EmailFieldPresentTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-GyanCRM-Git_Test_Suite" title="com.crm.qa.testcases.HomePageTest" hash-for-method="VerifyHomepageTitleTest">VerifyHomepageTitleTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-GyanCRM-Git_Test_Suite" title="com.crm.qa.testcases.LoginPageTest" hash-for-method="LoginTest">LoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-GyanCRM-Git_Test_Suite -->
@@ -139,42 +139,17 @@
           <div class="suite-GyanCRM-Git_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.crm.qa.testcases.HomePageTest</span>
+              <span class="class-name">com.crm.qa.testcases.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyUserNameAtTop">
-                  </a> <!-- VerifyUserNameAtTop -->
-                  <span class="method-name">VerifyUserNameAtTop</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;top-header-menu&apos;]/div[2]/span[1]&quot;}
-  (Session info: chrome=77.0.3865.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;IN-GYANPRAKASH2&apos;, ip: &apos;100.89.179.134&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\GYANPR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b86ed2b865a831e5aed5e32b482eab1b
-*** Element info: {Using=xpath, value=//*[@id=&apos;top-header-menu&apos;]/div[2]/span[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-	at com.crm.qa.pages.HomePage.User_text_at_top(HomePage.java:32)
-	at com.crm.qa.testcases.HomePageTest.VerifyUserNameAtTop(HomePageTest.java:45)
-... Removed 33 stack frames
+                  <a name="TitleTest">
+                  </a> <!-- TitleTest -->
+                  <span class="method-name">TitleTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [CRM] but found [Cogmento CRM]
+	at com.crm.qa.testcases.LoginPageTest.TitleTest(LoginPageTest.java:29)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -183,21 +158,21 @@ Session ID: b86ed2b865a831e5aed5e32b482eab1b
           <div class="suite-GyanCRM-Git_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.crm.qa.testcases.HomePageTest</span>
+              <span class="class-name">com.crm.qa.testcases.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyContactsLinkClick">
-                  </a> <!-- VerifyContactsLinkClick -->
-                  <span class="method-name">VerifyContactsLinkClick</span>
+                  <a name="EmailFieldPresentTest">
+                  </a> <!-- EmailFieldPresentTest -->
+                  <span class="method-name">EmailFieldPresentTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyHomepageTitleTest">
-                  </a> <!-- VerifyHomepageTitleTest -->
-                  <span class="method-name">VerifyHomepageTitleTest</span>
+                  <a name="LoginTest">
+                  </a> <!-- LoginTest -->
+                  <span class="method-name">LoginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -213,12 +188,12 @@ Session ID: b86ed2b865a831e5aed5e32b482eab1b
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;GyanCRM-Git Test Suite&quot;&gt;
   &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.qa.ExtentReportListener.NewExtentReporterNG2&quot;/&gt;
+    &lt;listener class-name=&quot;com.qa.ExtentReportListener.ExtentReporterNG&quot;/&gt;
     &lt;listener class-name=&quot;com.crm.qa.utils.PDFListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test name=&quot;GyanCRM-Git Test Cases&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.crm.qa.testcases.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.crm.qa.testcases.LoginPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- GyanCRM-Git Test Cases --&gt;
 &lt;/suite&gt; &lt;!-- GyanCRM-Git Test Suite --&gt;
@@ -260,22 +235,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyUserNameAtTop')
-data.setCell(0, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(0, 3, 51991);
+data.setCell(0, 1, 'LoginTest')
+data.setCell(0, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(0, 3, 748);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'VerifyContactsLinkClick')
-data.setCell(1, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(1, 3, 1804);
+data.setCell(1, 1, 'EmailFieldPresentTest')
+data.setCell(1, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(1, 3, 100);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyHomepageTitleTest')
-data.setCell(2, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(2, 3, 22);
+data.setCell(2, 1, 'TitleTest')
+data.setCell(2, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(2, 3, 98);
 window.suiteTableData['GyanCRM-Git_Test_Suite']= { tableData: data, tableDiv: 'times-div-GyanCRM-Git_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 53 seconds</span>
+              <span class="suite-total-time">Total running time: 946 ms</span>
               <div id="times-div-GyanCRM-Git_Test_Suite">
               </div> <!-- times-div-GyanCRM-Git_Test_Suite -->
             </div> <!-- times-div -->
@@ -301,44 +276,44 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.crm.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.crm.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">VerifyHomepageTitleTest</span>
-                <span class="method-start">12780 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">12826 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">13655 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">VerifyUserNameAtTop</span>
-                <span class="method-start">25287 ms</span>
+                <span class="method-name">TitleTest</span>
+                <span class="method-start">21358 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">77298 ms</span>
+                <span class="method-start">21585 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">80058 ms</span>
+                <span class="method-start">22538 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">VerifyContactsLinkClick</span>
-                <span class="method-start">92233 ms</span>
+                <span class="method-name">EmailFieldPresentTest</span>
+                <span class="method-start">37297 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">94039 ms</span>
+                <span class="method-start">37402 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">38870 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginTest</span>
+                <span class="method-start">50099 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">50848 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

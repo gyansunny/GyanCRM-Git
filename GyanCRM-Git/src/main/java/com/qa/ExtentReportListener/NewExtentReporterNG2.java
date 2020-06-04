@@ -11,6 +11,7 @@ import org.testng.ISuite;
 import org.testng.ISuiteResult;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -59,6 +60,7 @@ public class NewExtentReporterNG2 implements IReporter{
 	 Assert.assertTrue(true);
 	 //To generate the log when the test case is passed
 	 logger.log(LogStatus.PASS, "Test Case Passed is passTest");
+	 Reporter.log("Test execution completed ...", true);
 	 }
 	 
 	 @Test

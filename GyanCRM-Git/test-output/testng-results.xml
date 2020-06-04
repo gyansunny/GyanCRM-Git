@@ -2,76 +2,29 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="GyanCRM-Git Test Suite" duration-ms="95821" started-at="2019-10-03T09:24:50Z" finished-at="2019-10-03T09:26:26Z">
+  <suite name="GyanCRM-Git Test Suite" duration-ms="54076" started-at="2020-06-04T10:46:51Z" finished-at="2020-06-04T10:47:45Z">
     <groups>
     </groups>
-    <test name="GyanCRM-Git Test Cases" duration-ms="95821" started-at="2019-10-03T09:24:50Z" finished-at="2019-10-03T09:26:26Z">
-      <class name="com.crm.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="setUp" is-config="true" duration-ms="12780" started-at="2019-10-03T14:54:50Z" finished-at="2019-10-03T14:55:03Z">
+    <test name="GyanCRM-Git Test Cases" duration-ms="54076" started-at="2020-06-04T10:46:51Z" finished-at="2020-06-04T10:47:45Z">
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5025a98f]" name="setUp" is-config="true" duration-ms="21358" started-at="2020-06-04T16:16:51Z" finished-at="2020-06-04T16:17:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyHomepageTitleTest()[pri:1, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="VerifyHomepageTitleTest" duration-ms="22" started-at="2019-10-03T14:55:03Z" finished-at="2019-10-03T14:55:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyHomepageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="tearDown" is-config="true" duration-ms="827" started-at="2019-10-03T14:55:03Z" finished-at="2019-10-03T14:55:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="setUp" is-config="true" duration-ms="11632" started-at="2019-10-03T14:55:04Z" finished-at="2019-10-03T14:55:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="VerifyUserNameAtTop()[pri:2, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="VerifyUserNameAtTop" duration-ms="51991" started-at="2019-10-03T14:55:16Z" finished-at="2019-10-03T14:56:07Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="TitleTest()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@5025a98f]" name="TitleTest" duration-ms="98" started-at="2020-06-04T16:17:13Z" finished-at="2020-06-04T16:17:13Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='top-header-menu']/div[2]/span[1]"}
-  (Session info: chrome=77.0.3865.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'IN-GYANPRAKASH2', ip: '100.89.179.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\GYANPR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b86ed2b865a831e5aed5e32b482eab1b
-*** Element info: {Using=xpath, value=//*[@id='top-header-menu']/div[2]/span[1]}]]>
+              <![CDATA[expected [CRM] but found [Cogmento CRM]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='top-header-menu']/div[2]/span[1]"}
-  (Session info: chrome=77.0.3865.90)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'IN-GYANPRAKASH2', ip: '100.89.179.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\GYANPR~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56475}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: b86ed2b865a831e5aed5e32b482eab1b
-*** Element info: {Using=xpath, value=//*[@id='top-header-menu']/div[2]/span[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at com.sun.proxy.$Proxy7.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.isDisplayed(Unknown Source)
-	at com.crm.qa.pages.HomePage.User_text_at_top(HomePage.java:32)
-	at com.crm.qa.testcases.HomePageTest.VerifyUserNameAtTop(HomePageTest.java:45)
+              <![CDATA[java.lang.AssertionError: expected [CRM] but found [Cogmento CRM]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.crm.qa.testcases.LoginPageTest.TitleTest(LoginPageTest.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -99,27 +52,39 @@ Session ID: b86ed2b865a831e5aed5e32b482eab1b
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyUserNameAtTop -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="tearDown" is-config="true" duration-ms="2759" started-at="2019-10-03T14:56:08Z" finished-at="2019-10-03T14:56:10Z">
+        </test-method> <!-- TitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5025a98f]" name="tearDown" is-config="true" duration-ms="952" started-at="2020-06-04T16:17:13Z" finished-at="2020-06-04T16:17:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="setUp" is-config="true" duration-ms="12175" started-at="2019-10-03T14:56:10Z" finished-at="2019-10-03T14:56:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5025a98f]" name="setUp" is-config="true" duration-ms="14759" started-at="2020-06-04T16:17:14Z" finished-at="2020-06-04T16:17:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyContactsLinkClick()[pri:3, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="VerifyContactsLinkClick" duration-ms="1804" started-at="2019-10-03T14:56:22Z" finished-at="2019-10-03T14:56:24Z">
+        <test-method status="PASS" signature="EmailFieldPresentTest()[pri:2, instance:com.crm.qa.testcases.LoginPageTest@5025a98f]" name="EmailFieldPresentTest" duration-ms="100" started-at="2020-06-04T16:17:29Z" finished-at="2020-06-04T16:17:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyContactsLinkClick -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@20322d26]" name="tearDown" is-config="true" duration-ms="1439" started-at="2019-10-03T14:56:24Z" finished-at="2019-10-03T14:56:26Z">
+        </test-method> <!-- EmailFieldPresentTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5025a98f]" name="tearDown" is-config="true" duration-ms="1467" started-at="2020-06-04T16:17:29Z" finished-at="2020-06-04T16:17:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5025a98f]" name="setUp" is-config="true" duration-ms="11229" started-at="2020-06-04T16:17:30Z" finished-at="2020-06-04T16:17:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="LoginTest()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@5025a98f]" name="LoginTest" duration-ms="748" started-at="2020-06-04T16:17:41Z" finished-at="2020-06-04T16:17:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@5025a98f]" name="tearDown" is-config="true" duration-ms="2928" started-at="2020-06-04T16:17:42Z" finished-at="2020-06-04T16:17:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
     </test> <!-- GyanCRM-Git Test Cases -->
   </suite> <!-- GyanCRM-Git Test Suite -->
 </testng-results>
